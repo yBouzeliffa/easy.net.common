@@ -1,13 +1,28 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <!-- NuGet Package Metadata -->
+    <PackageId>Easy.Net.Common</PackageId>
+    <Version>10.0.1</Version>
+    <Authors>Youssef</Authors>
+    <Company>Easy.Net</Company>
+    <Description>Common utilities for .NET applications including Result pattern, operation error handling, and AES-GCM cryptography helpers.</Description>
+    <PackageTags>result-pattern;error-handling;cryptography;aes-gcm;utilities;dotnet</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/youssef/easy.net.common</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/youssef/easy.net.common</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <!-- Build settings -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
   </PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
-	</ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.6.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 </Project>

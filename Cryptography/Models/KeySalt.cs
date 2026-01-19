@@ -1,4 +1,4 @@
-namespace ClawSwipe.InfrastructureShared.Security.Models
+namespace Easy.Net.Common.Cryptography.Models
 {
     public record KeySalt
     {

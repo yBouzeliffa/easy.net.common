@@ -1,7 +1,7 @@
-using ClawSwipe.InfrastructureShared.Security.Models;
+using Easy.Net.Common.Cryptography.Models;
 using System.Security.Cryptography;
 
-namespace ClawSwipe.InfrastructureShared.Security.Helpers
+namespace Easy.Net.Common.Cryptography
 {
     public static class GetKeyFromPasswordHelper
     {

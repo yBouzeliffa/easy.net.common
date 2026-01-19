@@ -1,10 +1,10 @@
-using ClawSwipe.InfrastructureShared.Security.Models;
+using Easy.Net.Common.Cryptography.Models;
 using Org.BouncyCastle.Crypto.Engines;
 using Org.BouncyCastle.Crypto.Modes;
 using Org.BouncyCastle.Crypto.Parameters;
 using System.Security.Cryptography;
 
-namespace ClawSwipe.InfrastructureShared.Security.Helpers
+namespace Easy.Net.Common.Cryptography
 {
     public class Cryptor
     {
