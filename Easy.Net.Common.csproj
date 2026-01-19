@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <!-- NuGet Package Metadata -->
     <PackageId>Easy.Net.Common</PackageId>
-    <Version>10.0.1</Version>
+    <Version>10.0.2</Version>
     <Authors>Youssef</Authors>
     <Company>Easy.Net</Company>
     <Description>Common utilities for .NET applications including Result pattern, operation error handling, and AES-GCM cryptography helpers.</Description>
