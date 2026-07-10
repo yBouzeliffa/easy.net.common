@@ -1,11 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <!-- NuGet Package Metadata -->
     <PackageId>Easy.Net.Common</PackageId>
-    <Version>10.0.2</Version>
+    <Version>10.0.4</Version>
     <Authors>Youssef</Authors>
     <Company>Easy.Net</Company>
     <Description>Common utilities for .NET applications including Result pattern, operation error handling, and AES-GCM cryptography helpers.</Description>

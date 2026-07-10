@@ -24,8 +24,10 @@ namespace Easy.Net.Common.Cryptography
             if (string.IsNullOrEmpty(password))
                 throw new ArgumentNullException(nameof(password));
 
-            using var deriveBytes = new Rfc2898DeriveBytes(password, salt, iterations, HashAlgorithmName.SHA256);
-            return new KeySalt(deriveBytes.GetBytes(keySize), salt);
+            // Pbkdf2 statique (le constructeur Rfc2898DeriveBytes est obsolète — SYSLIB0060).
+            // Sortie strictement identique pour les mêmes paramètres : les clés existantes restent valides.
+            byte[] key = Rfc2898DeriveBytes.Pbkdf2(password, salt, iterations, HashAlgorithmName.SHA256, keySize);
+            return new KeySalt(key, salt);
         }
 
         private static byte[] GenerateRandomSalt(int saltSize = 16)
